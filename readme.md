@@ -1,10 +1,10 @@
 # No Shorts
 
-A tiny extension for **Google Chrome** that hides YouTube Shorts.  It simply makes any video or section labeled “Shorts” invisible so you can surf without them.
+A tiny extension for **Google Chrome** that hides YouTube Shorts.  It simply makes any video labeled “Shorts” invisible so you can surf without them.
 
 ## Who is it for
 
-Anyone who dislikes YouTube’s short‑form videos and just wants the normal site back.  You don’t need to know how to code.
+Anyone who dislikes YouTube’s short‑form videos and just wants the normal site back.
 
 ## How to install
 
@@ -14,7 +14,7 @@ Anyone who dislikes YouTube’s short‑form videos and just wants the normal si
 4. Click **Load unpacked** and choose the folder where you saved this project.
 5. The extension will appear in the list and start working immediately.
 
-That’s it! Now go to `youtube.com` and you’ll no longer see any Shorts.
+That’s it! Now go to `youtube.com` and you’ll have the shorts videos hidden.
 
 ## Notes
 
