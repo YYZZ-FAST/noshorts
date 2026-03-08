@@ -3,13 +3,20 @@
 // inject hiding stylesheet
 (function() {
   const style = document.createElement('style');
-  style.textContent = `.noshorts { display: none !important; }`;
+  // hide any element we mark plus all rich sections directly
+  style.textContent = `.noshorts, ytd-rich-section-renderer { display: none !important; }`;
   if (document.head) document.head.appendChild(style);
   else document.addEventListener('DOMContentLoaded', () => document.head.appendChild(style));
 })();
 
 function hideShorts() {
+  // hide individual shorts links and shelves
   document.querySelectorAll('ytd-reel-shelf-renderer, a[href^="/shorts/"]').forEach(el => {
+    el.classList.add('noshorts');
+  });
+
+  // also hide all <ytd-rich-section-renderer> containers
+  document.querySelectorAll('ytd-rich-section-renderer').forEach(el => {
     el.classList.add('noshorts');
   });
 }
